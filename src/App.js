@@ -11,6 +11,7 @@ import BarcodeScanner from "./components/BarcodeScanner";
 import BarcodeGenerator from "./components/BarcodeGenerator";
 import QRcodeGenerator from "./components/QRcodeGenerator";
 import QRcodeScanner from "./components/QRcodeScanner";
+import Cart from "./components/Cart.jsx"
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           {/* <ToastContainer /> */}
           <BrowserRouter>
             <Routes>
+              <Route path="/cart" Component={Cart} />
               <Route path="/bscan" Component={BarcodeScanner} />
               <Route path="/bgenerate" Component={BarcodeGenerator} />
               <Route path="/qgenerate" Component={QRcodeGenerator} />
